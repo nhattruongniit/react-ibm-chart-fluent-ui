@@ -1,14 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import { FluentProvider, webLightTheme, webDarkTheme } from '@fluentui/react-components';
 import reportWebVitals from './reportWebVitals';
+
+// components
+import App from './App';
+
+// styles
+import "react-datepicker/dist/react-datepicker.css";
+import './index.css';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <FluentProvider theme={webLightTheme}>
     <App />
-  </React.StrictMode>
+  </FluentProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -11,3 +11,53 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.visualCard {
+  padding: 10px;
+}
+
+.producer {
+  flex-grow: 1;
+  display: flex;
+}
+
+.report {
+  flex-shrink: 1;
+  width: 250px;
+}
+
+.producer_filter {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.multiSelectDropdown {
+  display: flex;
+  flex-direction: column;
+}
+
+.multiSelectDropdown button {
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border: 1px solid #000000;
+}
+
+.producerFilter_row {
+  width: 33%;
+}
