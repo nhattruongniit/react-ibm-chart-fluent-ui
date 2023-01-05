@@ -12,6 +12,7 @@ function MultiSelectDropDown({ label, ariaLabelledby, options }) {
       <Dropdown
         aria-labelledby={ariaLabelledby}
         multiselect
+        size='small'
         placeholder="Select option ..."
         // defaultSelectedOptions={['Cat', 'Dog']}
       >

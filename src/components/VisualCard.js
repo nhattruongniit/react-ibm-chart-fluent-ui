@@ -12,7 +12,7 @@ function VisualCard({ options, ...props }) {
       <ul>
         {options.map((option, optionIndex) => (
           <li key={optionIndex}>
-            <Checkbox label={option.label} value={option.value} />
+            <Checkbox size='medium' label={option.label} value={option.value} />
           </li>
         ))}
       </ul>
