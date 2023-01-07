@@ -23,7 +23,7 @@ ul li {
 }
 
 .dashboard {
-  margin: 0 10px;
+  margin: 10px;
 }
 
 .flex {
@@ -49,8 +49,7 @@ ul li {
 }
 
 .report {
-  flex-shrink: 1;
-  width: 250px;
+  width: 100%;
 }
 
 .producer_filter {
@@ -93,6 +92,12 @@ ul li {
 .producerFilter_row .react-datepicker-wrapper + .react-datepicker-wrapper {
   margin-left: 4px
 }
+
+.pieChart {
+  width: 100%;
+}
+
+
 
 @media (max-width: 1280px) {
   .dashboard {
