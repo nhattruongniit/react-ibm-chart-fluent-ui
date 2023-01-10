@@ -1,3 +1,4 @@
+/* eslint-disable no-script-url */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from 'react';
 import DatePicker from "react-datepicker";
@@ -5,15 +6,15 @@ import * as Highcharts from 'highcharts';
 import Exporting from 'highcharts/modules/exporting';
 
 // fluentui
-import { tokens, makeStyles, shorthands, useId, Input, Label, InputProps } from "@fluentui/react-components";
+import { tokens, Input, Label } from "@fluentui/react-components";
 
 // components
 import VisualCard from './components/VisualCard';
 import MultiSelectDropDown from './components/DropDown/MultiSelectDropDown';
 import PieChart from './components/Chart/PieChart';
 import LineZoneChart from './components/Chart/LineZoneChart';
-import TreeChart from './components/Chart/TreeChart';
 import SingleDropDown from './components/DropDown/SingleDropDown';
+import FunnelChart from './components/Chart/FunnelChart';
 
 // mock data
 import { optionVisualModern, optionsOperators } from './mockData';
@@ -104,7 +105,12 @@ function App() {
                 <LineZoneChart />
               </div>
               <div className='reportChart'>
-                <PieChart />
+                <div className='reportChart_area'>
+                  are chart
+                </div>
+                <div className='reportChart_pie'>
+                  <PieChart />
+                </div>
               </div>
             </div>
             
@@ -192,6 +198,10 @@ function App() {
             <div className='textRun'>Current Top Producing Fields (thousand boe/d)</div>
           </div>
 
+          <br />
+
+          <FunnelChart /> 
+          
          
         </div>
 

@@ -5,7 +5,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  zoom: 0.9;
 }
 
 code {
@@ -67,14 +66,6 @@ ul li {
 .multiSelectDropdown {
   display: flex;
   flex-direction: column;
-}
-
-.multiSelectDropdown button {
-  /* white-space: nowrap;
-  width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  border: 1px solid #000000; */
 }
 
 .producerFilter_row {
@@ -192,4 +183,59 @@ ul li {
   color: rgb(0, 174, 239);
   text-decoration: underline;
   text-align: right;
+}
+
+.pureFunnelChart_content {
+  display: flex;
+  align-items: center;
+}
+
+.pureFunnelChart_content + .pureFunnelChart_content {
+  margin-top: 12px;
+}
+
+.pureFunnelChart_title {
+  width: 100px; 
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  font-size: 10px;
+  flex-shrink: 1;
+}
+
+.pureFunnelChart_bar {
+  height: 26px;
+  width: 100%;
+  text-align: center;
+}
+
+.pureFunnelChart_bar span {
+  display: inline-block;
+  height: 100%;
+  line-height: 26px;
+  background-color: rgb(239, 130, 0);
+  color: #fff;
+  text-align: center;
+  opacity: 0.4;
+  max-width: 205px;
+}
+
+.pureFunnelChart_bar span.active {
+  opacity: 1;
+}
+
+.reportChart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reportChart_area  {
+  flex-grow: 1;
+  margin-right: 12px;
+}
+
+.reportChart_pie {
+  width: 300px;
+  flex-shrink: 1;
 }

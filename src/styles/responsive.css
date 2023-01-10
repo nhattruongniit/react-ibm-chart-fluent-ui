@@ -2,7 +2,6 @@
 @media (max-width: 1380px) {
   .dashboard {
     width: 1480px;
-    overflow: auto;
   }
 
   .producer {
