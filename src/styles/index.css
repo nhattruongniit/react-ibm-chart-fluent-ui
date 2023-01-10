@@ -1,0 +1,195 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  zoom: 0.9;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.dashboard {
+  margin: 10px;
+  display: flex;
+}
+.dashboard_fluids {
+  flex-grow: 1;
+}
+
+.flex {
+  display: flex;
+}
+
+.visualCard {
+  padding: 10px;
+  flex-shrink: 1;
+  width: 200px;
+}
+
+.visualCard ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.producer {
+  flex-grow: 1;
+  display: flex;
+}
+
+.report {
+  width: 100%;
+  display: flex;
+}
+
+.producer_filter {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 0;
+}
+
+.multiSelectDropdown {
+  display: flex;
+  flex-direction: column;
+}
+
+.multiSelectDropdown button {
+  /* white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border: 1px solid #000000; */
+}
+
+.producerFilter_row {
+  width: 29%;
+  margin: 0 2%;
+}
+
+.producerFilter_row + .producerFilter_row {
+  margin-top: 4px;
+}
+
+.fui-Checkbox .fui-Checkbox__indicator {
+  margin: 2px;
+}
+
+.fui-Checkbox .fui-Label {
+  padding: 2px
+}
+
+.producerFilter_row .react-datepicker-wrapper + .react-datepicker-wrapper {
+  margin-left: 16px
+}
+
+.pieChart {
+  width: 100%;
+}
+
+.reportAside {
+  border: 1px solid var(--colorNeutralStrokeAccessible);
+  flex-shrink: 1;
+  width: 400px;
+  margin-left: 16px;
+  padding: 10px;
+}
+
+.reportFluid {
+ flex-grow: 1;
+}
+
+
+.dateTime_title {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.dateTime {
+  border-left: 3px solid rgb(166, 166, 166);
+  padding-left: 10px;
+  margin-top: 8px;
+  color: #777;
+}
+
+.dateTime_link {
+  text-align: right;
+  font-size: 12px;
+  display: block;
+  margin-top: 4px;
+}
+
+.dropdown + .dropdown {
+  margin-top: 8px;
+}
+
+.dropdown span {
+  display: block;
+  text-align: right;
+  font-size: 10px;
+  padding-right: 8px;
+}
+
+.react-datepicker__input-container input {
+  width: 100%;
+}
+
+.hydrocarbon {
+  text-align: right;
+}
+
+.hydrocarbon label {
+  font-size: 11px;
+}
+
+.hydrocarbon span {
+  width: 100%;
+}
+
+.dropdown_green button, .dropdown_green span {
+  color: rgb(72, 168, 65);
+}
+
+.dropdown_orange button, .dropdown_orange span {
+  color: rgb(239, 130, 0);
+}
+
+.dropdown_red button, .dropdown_red span {
+  color: rgb(255, 74, 32)
+}
+
+.dropdown_brown button, .dropdown_brown span {
+  color: rgb(172, 26, 47)
+}
+
+.dropdown_blueLight button, .dropdown_blueLight span {
+  color: rgb(0, 174, 239)
+}
+
+.dropdown_blue button, .dropdown_blue span {
+  color: rgb(0, 101, 162)
+}
+
+.textRun {
+  font-family: Arial;
+  font-size: 7.5pt;
+  font-weight: bold;
+  color: rgb(0, 174, 239);
+  text-decoration: underline;
+  text-align: right;
+}

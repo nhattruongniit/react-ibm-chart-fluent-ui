@@ -1,0 +1,15 @@
+
+@media (max-width: 1380px) {
+  .dashboard {
+    width: 1480px;
+    overflow: auto;
+  }
+
+  .producer {
+    margin-right: 10px;
+  }
+  .producerFilter_row {
+    width: auto;
+    flex: 1;
+  }
+}

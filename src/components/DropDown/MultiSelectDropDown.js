@@ -1,6 +1,4 @@
 import React from 'react'
-
-
 import { Dropdown, Option } from '@fluentui/react-components/unstable';
 
 function MultiSelectDropDown({ label, ariaLabelledby, options }) {
