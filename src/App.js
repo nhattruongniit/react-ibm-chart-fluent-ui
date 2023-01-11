@@ -15,6 +15,7 @@ import PieChart from './components/Chart/PieChart';
 import LineZoneChart from './components/Chart/LineZoneChart';
 import SingleDropDown from './components/DropDown/SingleDropDown';
 import FunnelChart from './components/Chart/FunnelChart';
+import TreeChart from './components/Chart/TreeChart';
 
 // mock data
 import { optionVisualModern, optionsOperators } from './mockData';
@@ -106,10 +107,45 @@ function App() {
               </div>
               <div className='reportChart'>
                 <div className='reportChart_area'>
-                  are chart
+                  <div className='reportChart_tree'>
+                    <div className='reportChart_areaTitle'>Total Injected or Produced Fluids (boe)</div>
+                    <TreeChart />
+                  </div>
+                  <div className='reportChart_tree'>
+                    <div className='reportChart_areaTitle'>To filter this treemap and pie chart by fluid type, use the green box in the top left corner</div>
+                    <TreeChart />
+                  </div>
                 </div>
                 <div className='reportChart_pie'>
-                  <PieChart />
+                  <div className='reportChart_vis'>
+                    <PieChart />
+                  </div>
+                  <div>
+                    <div className='oil' style={{ color: "rgb(72, 168, 66)"}}>
+                      <div>
+                        Oil Produced in <br/> Filtered Time (boe)
+                      </div>
+                      <div className='oil_statics'>26.2bn</div>
+                    </div>
+                    <div className='oil' style={{ color: "rgb(172, 26, 47)"}}>
+                      <div>
+                        Gas Produced in <br /> Filtered Time (bcf)
+                      </div>
+                      <div className='oil_statics'>102K</div>
+                    </div>
+                    <div className='oil' style={{ color: "rgb(0, 174, 239)"}}>
+                      <div>
+                        Hydrocarbons Produced in <br /> Filtered Time (boe)
+                      </div>
+                      <div className='oil_statics'>34.2bn</div>
+                    </div>
+                    <div className='oil' style={{ color: "rgb(0, 174, 239)"}}>
+                      <div>
+                        Total Hydrocarbons <br /> Produced (boe)
+                      </div>
+                      <div className='oil_statics'>34.2bn</div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

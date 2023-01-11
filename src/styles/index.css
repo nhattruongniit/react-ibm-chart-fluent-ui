@@ -96,7 +96,7 @@ ul li {
 .reportAside {
   border: 1px solid var(--colorNeutralStrokeAccessible);
   flex-shrink: 1;
-  width: 400px;
+  width: 300px;
   margin-left: 16px;
   padding: 10px;
 }
@@ -127,6 +127,10 @@ ul li {
 
 .dropdown + .dropdown {
   margin-top: 8px;
+}
+
+.dropdown {
+  text-align: right;
 }
 
 .dropdown span {
@@ -233,9 +237,52 @@ ul li {
 .reportChart_area  {
   flex-grow: 1;
   margin-right: 12px;
+  position: relative;
+  display: flex;
 }
 
 .reportChart_pie {
-  width: 300px;
   flex-shrink: 1;
+}
+
+.rv-treemap__leaf {
+  overflow: hidden;
+  position: absolute;
+}
+
+.treemapVis {
+  position: relative;
+}
+
+.reportChart_areaTitle {
+  font-size: 10px;
+}
+
+.reportChart_vis {
+  width: 300px;
+  position: relative;
+}
+
+.oil {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.oil + .oil {
+  margin-top: 8px;
+}
+
+.oil_statics {
+  text-anchor: middle;
+  font-size: 28px;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  white-space: pre;
+}
+
+.reportChart_tree {
+  width: 50%;
 }

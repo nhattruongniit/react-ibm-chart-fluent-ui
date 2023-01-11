@@ -8,6 +8,7 @@ import App from './App';
 
 // styles
 import "react-datepicker/dist/react-datepicker.css";
+import "react-d3-treemap/dist/react.d3.treemap.css";
 import './styles/index.css';
 import './styles/responsive.css';
 
